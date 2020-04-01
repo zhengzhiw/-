@@ -1,0 +1,503 @@
+/*
+* @Author: Administrator
+* @Date:   2018-01-17 14:34:15
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-01-21 22:47:42
+*/
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow:hidden;
+}
+section{
+	width: 100%;
+	height: 100%;
+	position:relative;
+}
+section>div{
+	width: 100%;
+	height: 100%;
+	overflow:hidden;
+}
+.screen1{
+	background: url('../images/bg01.jpg');
+	background-size: 100% 100%;
+	position:relative;
+}
+.screen2{
+	background: url('../images/bg02.jpg');
+	background-size: 100% 100%;
+	position:relative;
+}
+.screen3{
+	background: url('../images/bg03.jpg');
+	background-size: 100% 100%;
+	position:relative;
+}
+.screen4{
+	background: url('../images/bg04.jpg');
+	background-size: 100% 100%;
+	position:relative;
+}
+.screen5{
+	background: url('../images/bg05.jpg');
+	background-size: 100% 100%;
+	position:relative;
+}
+.screen6{
+	background: url('../images/bg06.jpg');
+	background-size: 100% 100%;
+	position:relative;
+}
+.screen7{
+	background: url('../images/bg07.jpg');
+	background-size: 100% 100%;
+	position:relative;
+}
+ol{	
+	height: 220px;;
+	right: 10px;
+	top:50%;
+	position: fixed;
+	margin-top: -110px;
+}
+ol li{
+	width:20px;
+	height: 20px;
+	margin-bottom: 10px;
+	border-radius: 50%;
+	border: 1px solid #f60;
+	cursor: pointer;
+}
+.content{
+	width:40px;
+	height: 40px;
+	margin-left: -10px;
+	background: url('../images/side_bg.png') center center;
+	background-size:90%;
+	border-style: none;
+	animation: my 3s infinite linear;
+}
+@keyframes my{
+	from{transform:rotate(0deg);}
+	to{transform:rotate(360deg);}
+}
+img#muc{
+	position: fixed;
+	right:10px;
+	top:20px;
+	width:40px;
+	height: 40px;
+}
+.music{
+	animation:my 6s infinite linear;
+}
+
+.ball{
+	position:absolute;
+	left: 50%;
+	bottom:420px;
+	width: 118px;
+	height: 133px;
+	margin-left:-59px;
+	animation:ball 6s infinite alternate
+}
+
+.compass{
+	animation:ball 0s
+}
+.compoint{
+position:absolute;
+bottom:448px;
+left:50%;
+margin-left:-46px;
+width:92px;
+animation:point 4s linear 0s infinite normal
+}
+.fireball{
+position:absolute;
+bottom:540px;
+left:50%;
+margin-left:273px;
+width:35px;
+animation:fireball 4s infinite alternate
+}
+.pao{
+	position:absolute;
+	left:50%;
+	margin-left:-91px;
+	bottom:416px;
+	z-index: 1;
+}
+.pao>img{
+	margin-left:5px;
+}
+.pao>img:nth-of-type(1){
+		animation:pao 6s linear 0s infinite normal
+}
+.pao>img:nth-of-type(2){
+		animation:pao 7s linear 0s infinite normal
+}
+.pao>img:nth-of-type(3){
+		animation:pao 8s linear 0s infinite normal
+}
+.pao>img:nth-of-type(4){
+		animation:pao 9s linear 0s infinite normal
+}
+.pao>img:nth-of-type(5){
+		animation:pao 6s linear 0s infinite normal
+}
+.pao>img:nth-of-type(6){
+		animation:pao 10s linear 0s infinite normal
+}
+.pao>img:nth-of-type(7){
+		animation:pao 11s linear 0s infinite normal
+}
+.pao>img:nth-of-type(8){
+		animation:pao 5s linear 0s infinite normal
+}
+.pao>img:nth-of-type(9){
+		animation:pao 8s linear 0s infinite normal
+}
+
+
+.ball04{
+	width: 156px;
+    height: 199px;
+    animation:ball04 6s linear 0s infinite normal;
+    transform-origin:center bottom;
+    transition:all 4s
+}
+.moveball{
+	position: absolute;
+    left: 50%;
+    bottom: 366px;
+    margin-left: -89px;
+	transition:all 8s;
+}
+.moveball04{
+	  transform: translate(-285px,-270px);
+}
+.pic02{
+	position:absolute;
+	left:50%;
+	margin-left: -117px;
+    bottom: 453px;
+    animation:pic02 2s linear 0s infinite normal;
+}
+.fireball02{
+    position: absolute;
+    left: 50%;
+    bottom: 200px;
+    width: 60px;
+    margin-left: 277px;
+     animation:fireball02 4s linear 0s infinite alternate
+}
+.fireball03{
+    position: absolute;
+    left: 50%;
+    bottom: 70px;
+    width: 82px;
+    margin-left: 49px;
+     animation:fireball03 6s linear 0s infinite alternate;
+}
+.aircraft{
+	position:absolute;
+    left: 50%;
+    width: 120px;
+    bottom: 260px;
+    margin-left: -59px;
+    animation:aircraft 6s linear 0s infinite alternate
+}
+.picscreen6{
+	animation:picscreen6 6s linear 0s infinite normal;
+}
+.blackhole{
+    position: absolute;
+    left: 50%;
+    margin-left: -82px;
+    width: 175px;
+    bottom: 380px;
+    animation:blackhole 10s linear 0s infinite normal;
+}
+.dot1{
+	animation:dot1 1s linear 0s infinite normal;
+}
+.dot2{
+	transform:translateX(909px);
+	animation:dot2 4s linear 0s infinite normal;
+}
+.dot3{
+	transform:translate(-138px,540px);
+	animation:dot3 3s linear 0s infinite normal;
+}
+.dot4{
+	transform: translate(775px,540px);
+	animation:dot4 2s linear 0s infinite normal;
+}
+@keyframes ball{
+	0%{
+		bottom:420px;
+	}
+	100%{
+		bottom:385px;
+	}
+}
+
+@keyframes point{
+	from{
+		transform:rotate(0deg)
+	}
+	to{
+		transform:rotate(360deg)
+	}
+}
+@keyframes fireball{
+	from{
+		bottom:540px;
+	}
+	to{
+		bottom:570px;
+	}
+}
+@keyframes pao{
+	from{
+		transform:translate(0px,0px)
+	}
+	to{
+		transform:translate(0px,-250px)
+	}
+}
+@keyframes ball04{
+	0%{
+		transform:rotate(0deg)
+	}
+	25%{
+		transform:rotate(10deg)
+	}
+	50%{
+		transform:rotate(0deg)
+	}
+	75%{
+		transform:rotate(-10deg)
+	}
+	100%{
+		transform:rotate(0deg)
+	}
+}
+@keyframes pic02{
+	from{
+		transform:scale(0.5)
+	}
+	to{
+		transform:scale(3)
+	}
+}
+@keyframes fireball02{
+	from{
+		bottom:200px;
+	}
+	to{
+		bottom:158px;
+	}
+}
+@keyframes fireball03{
+	from{
+		bottom:70px;
+	}
+	to{
+		bottom:100px;
+	}
+}
+
+@keyframes aircraft{
+	from{
+		bottom:280px;
+	}
+	to{
+		bottom: 245px;
+	}
+}
+@keyframes picscreen6{
+	from{
+		transform:translateY(0px);
+	}
+	to{
+		transform:translateY(150px);
+	}
+}
+
+@keyframes blackhole{
+	from{
+		transform:rotate(0deg)
+	}
+	from{
+		transform:rotate(360deg)
+	}
+}
+
+@keyframes dot1{
+	from{
+		transform:translate(0,0)
+	}
+	to{
+		transform: translate(485px,142px);
+	}
+}
+@keyframes dot2{
+	from{
+		transform:translateX(909px)
+	}
+	to{
+		transform:translate(420px,142px)
+	}
+}
+@keyframes dot3{
+	from{
+		transform:translate(-138px,540px)
+	}
+	to{
+		transform:translate(355px,142px)
+	}
+}
+@keyframes dot4{
+	from{
+		transform: translate(775px,540px);
+	}
+	to{
+		transform:translate(290px,142px)
+	}
+}
+.divcloud{
+	width: 450px;
+	height:186px;
+	position:absolute;
+	right:10%;
+	bottom:393px;
+
+}
+
+.cloud{
+	float: right;
+	width: 175px;
+	animation:cloud 150s infinite alternate
+}
+ .scloud{	
+ 	float: left;
+	width:150px;
+	transform: translate(0px,145px);
+	animation:scloud 120s infinite alternate
+} 
+ @keyframes cloud{
+	0%{
+		transform:translate(0px,0px)}
+	100%{
+		transform:translate(-1500px,0px)}
+} 
+ @keyframes scloud{
+	0%{
+		transform:translate(0px,145px)}
+	100%{
+		transform:translate(-1500px,145px)}
+} 
+
+.logo1{
+	position:fixed;
+	left:35px;
+	top:20px;
+}
+
+
+.logo{
+	width: 120px;
+	height: 53px;
+	background:url('../images/logo-text.png') 0px -17px;
+	position:absolute;
+	left:50%;
+	margin-left:350px;
+	bottom:320px;
+	transition:all 2s;
+}
+section div .logo_anim{
+	transform:translate(-530px,0)
+}
+
+.logo img{
+	width: 106px;
+	height: 53px;
+}
+
+
+.beta{
+	width:320px;
+	height: 130px;
+	position:fixed;
+	left:50%;
+	margin-left: -160px;
+	bottom:120px;
+	overflow:hidden;
+}
+.beta span{
+	color:white;
+	font-weight: bold;
+	font-size: 10px;
+	float: left;
+	padding:0px 14px;
+}
+.beta span:nth-of-type(2){
+	border-right: 1px solid #c5cec8;
+	border-left: 1px solid #c5cec8;
+	padding: 0px 10px;
+}
+p.text{
+	text-align: center;
+	width:340px;
+	position:absolute;
+	font-family: '宋体';
+	font-size:13px;
+	color:white;
+	left:50%;
+	margin-left: -170px;
+	bottom:280px;
+	height: 30px;
+	transition:all 2s;
+}
+div p.del{
+	transform:scale(0.2)
+}
+
+.logotext img{
+	height: 53px;
+	width:225px;
+}
+
+.logotext{
+	position:absolute;
+	bottom:320px;
+	left:50%;
+	margin-left:-585px;
+	transition:all 2s;
+}
+.logotext_anim{
+	transform: translate(530px,0px) rotate(360deg);
+
+}
+footer{
+	width:100%;
+	background:rgba(0,0,0,0.5);
+	position:fixed;
+	bottom:0px;
+}
+footer div{
+	width:1010px;
+	height: 60px;
+	margin:0px auto;
+}
+footer div>a{
+	float: left;
+	width: 202px;
+	text-align: center;
+	line-height: 60px;
+	color:#b1b1b1;
+	text-decoration:none;
+}

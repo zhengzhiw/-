@@ -1,0 +1,117 @@
+/*
+* @Author: Administrator
+* @Date:   2018-01-22 19:31:58
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-01-26 09:18:01
+*/
+html,body{
+	width: 100%;
+	height: 100%;
+}
+header img{
+	transform:translate(-605px,0px)
+}
+header div{
+	position: absolute;
+	width: 330px;
+	height:70px;
+	margin-right: -164px;
+	right: 50%;
+	top:156px;
+	background: url(../images/alogo.png) 0px -112px no-repeat;
+}
+main{
+	transform:translate(0px,-66px);
+	width: 1000px;
+	margin:0px auto;
+}
+.odiv{
+	height:100%;
+	width:496px;
+	float: right;
+	border-left: 4px solid #1cadf0;
+}
+.div1{
+	margin-top: 60px;
+	margin-left: 30px;
+	width: 380px;
+	background:#1cadf0;
+}
+.div1 img{
+	transform:translate(-10px,-5px)
+}
+.div1>span{
+	position:absolute;
+	width: 20px;
+	height: 20px;
+	transform:translate(-41px,-7px);
+	background:url('../images/version_bg.png')  -314px -315px no-repeat
+}
+.div1 ol{
+	width:320px;
+	padding: 30px;
+}
+.div1 li{
+	margin-bottom: 19px;
+	font-size: 12px;
+	color:white;
+}
+.div1 li:nth-of-type(1){
+
+	font-size:20px;
+	font-weight: bold;
+}
+.div1 li span{
+	font-size:12px;
+}
+
+
+.div2{
+	position:relative;
+	left: -410px;
+	width: 380px;
+	background:#1cadf0;
+}
+.div2 img{
+	transform:translate(380px,-5px)
+}
+.div2>span{
+	position:absolute;
+	width: 20px;
+	height: 20px;
+	transform:translate(399px,-7px);
+	background:url('../images/version_bg.png')  -314px -315px no-repeat
+}
+.div2 ol{
+	width:320px;
+	padding-left:30px;
+	padding-bottom:30px;
+	padding-right:30px;
+}
+.div2 li{
+	font-size: 12px;
+	color:white;
+	margin-bottom:19px;
+}
+.div2 li:nth-of-type(1){
+
+	font-size:20px;
+	font-weight: bold;
+}
+.div2 li span{
+	font-size:12px;
+}
+
+#div3,#div4{
+	margin-top:0px;
+	background:#e6e7eb;
+}
+#div3 ol>li,#div4 ol>li{
+	color:#666666;
+}
+#div3 ol,#div4 ol{
+	padding-top: 0px;
+}
+#div5{
+	background:none;
+}
